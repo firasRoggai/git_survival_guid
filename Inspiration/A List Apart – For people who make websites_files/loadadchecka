@@ -1,0 +1,7 @@
+jQuery(document).ready(checkAds()); function checkAds(){ 
+	if (document.getElementById('adsense')!=undefined){
+		ga('send', 'event', 'Adblock', 'Unblocked', 'false', { nonInteraction: true });
+	} else {
+		ga('send', 'event', 'Adblock', 'Blocked', 'true', { nonInteraction: true });
+	}
+}
