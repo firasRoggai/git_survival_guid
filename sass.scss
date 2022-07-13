@@ -80,19 +80,17 @@ header {
     }
 }
 article {
-      white-space: pre-line;
       line-height: 2rem;
       padding: 1rem 3rem;
     .title {
         font-size: font_size(h2);
-        display: inline-block;
+        margin: 2rem 0rem;
         text-decoration: underline;
-
     }
-    span {
-        font-size: font_size(h4);
-        background-color: lightskyblue;
-        text-decoration: underline;
+    .sub {
+        font-size: font_size(h3);
+        margin: 1.5rem 0rem;
+        text-decoration: underline;        
     }
     // span::before {
     //     content: "* ";
