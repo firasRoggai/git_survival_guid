@@ -30,6 +30,7 @@ body {
     grid-template-rows: 40vh minmax(100vh,auto) 20vh;
 
 }
+  
 header {
     background-image: url('./Assets/patternpad\(5\).svg'); // back:#5e78de , front: #5fd9f1 , black
     grid-column: 1/-1;
@@ -37,6 +38,18 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
+    .overlay {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(66, 63, 63, 0.203);
+      }
+    .content{
+        z-index: 99;
+    }
     h1 {
         font-size: font_size(h1);
         color: white;
