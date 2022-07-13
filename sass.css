@@ -78,11 +78,14 @@ article {
 
 article .title {
   font-size: 3.5rem;
+  display: inline-block;
+  text-decoration: underline;
 }
 
 article span {
-  background: lightblue;
   font-size: 2.5rem;
+  background-color: lightskyblue;
+  text-decoration: underline;
 }
 
 footer {

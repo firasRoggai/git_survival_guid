@@ -72,11 +72,18 @@ article {
       padding: 1rem 3rem;
     .title {
         font-size: font_size(h2);
+        display: inline-block;
+        text-decoration: underline;
+
     }
     span {
-        background: lightblue;
         font-size: font_size(h4);
+        background-color: lightskyblue;
+        text-decoration: underline;
     }
+    // span::before {
+    //     content: "* ";
+    // }
 
 }
 
