@@ -97,13 +97,24 @@ footer {
     -ms-grid-rows: 30vh minmax(100vh, auto) 20vh;
         grid-template-rows: 30vh minmax(100vh, auto) 20vh;
   }
+  /*** Header ***/
+  header {
+    padding: 1rem 0.8rem;
+    text-align: start;
+  }
   header h1 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    margin-top: 1rem;
   }
   header p {
-    font-size: 16px;
+    font-size: 0.75rem;
     margin: 10px 0px;
   }
+  /*** Article ***/
+  article {
+    padding: 0.5rem 1rem;
+  }
+  /*** Sidebar ***/
   .sidebar {
     display: none;
   }
@@ -119,9 +130,15 @@ footer {
     -ms-grid-rows: 30vh minmax(100vh, auto) 20vh;
         grid-template-rows: 30vh minmax(100vh, auto) 20vh;
   }
+  /*** Header ***/
   header h1 {
     font-size: 2rem;
   }
+  /*** Article ***/
+  article {
+    padding: none;
+  }
+  /*** Sidebar ***/
   .sidebar {
     display: none;
   }

@@ -17,7 +17,8 @@ $font_size_value :(
     "h4": 2.5rem,
     "h5": 2rem,
     "h6": 1.5rem,
-    "p": 1rem
+    "p": 1rem,
+    "small": 0.75rem
 );
 @function font_size($size){
     @return map-get($font_size_value,$size) 
@@ -88,15 +89,24 @@ and (max-device-width : 480px) {
     grid-template-columns:  1fr;
     grid-template-rows: 30vh minmax(100vh,auto) 20vh;
 }
+/*** Header ***/
 header {
+    padding: 1rem 0.8rem;
+    text-align: start;
     h1 {
-        font-size: font_size(h6);
+        font-size: font_size(h4);
+        margin-top: 1rem;
     }
     p {
-        font-size: 16px;
+        font-size: font_size(small);
         margin: 10px 0px;
     }
 }
+/*** Article ***/
+article {
+    padding: 0.5rem 1rem;
+}
+/*** Sidebar ***/
     .sidebar {
         display: none;
     }
@@ -111,11 +121,17 @@ and (max-device-width : 1024px) {
     grid-template-columns:  1fr;
     grid-template-rows: 30vh minmax(100vh,auto) 20vh;
 }
+/*** Header ***/
 header {
     h1 {
         font-size: font_size(h5);
     }
 }
+/*** Article ***/
+article {
+    padding: none;
+}
+/*** Sidebar ***/
 .sidebar {
     display: none;
 }
