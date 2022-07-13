@@ -6,6 +6,8 @@
     padding: 0;
     margin: 0;
     font-family: 'Cabin', sans-serif;
+    text-decoration: none;
+    color: black;
 }
 /***** functions *****/
 $font_size_value :(
@@ -45,24 +47,31 @@ header {
 }
 .sidebar {
     background: lightcoral;
-    .headline {
-        font-size: font_size(h5);
-    }
-    .sub {
-        display: block;
-    }
-}
-article {
+    padding: 10px;
     .title {
         font-size: font_size(h3);
     }
     .sub {
         display: block;
+        margin: 1.5rem 0;
+        font-size: font_size(p);
+    }
+    .sub::before {
+        content: "// ";
+    }
+}
+article {
+      white-space: pre-line;
+      line-height: 2rem;
+      padding: 1rem 3rem;
+    .title {
+        font-size: font_size(h2);
+    }
+    span {
         background: lightblue;
         font-size: font_size(h4);
-        margin: 1rem 0rem;
-
     }
+
 }
 
 footer {

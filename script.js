@@ -10,6 +10,7 @@ const sideBare = document.querySelector('.sidebar');
 titles.forEach((element)=>{
     if(element.className.includes("title")){
     const newElement = document.createElement('h1')
+    newElement.classList.add('title')
     newElement.textContent = element.textContent;
     sideBare.appendChild(newElement);
 } 
