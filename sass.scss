@@ -10,12 +10,9 @@
 /***** functions *****/
 $font_size_value :(
     "h1": 4rem,
-    /* will_add_later
-    "h2": 4rem,
-    "h3": 4rem,
-    "h4": 4rem,
-     will_add_later*/
-
+    "h2": 3.5rem,
+    "h3": 3rem,
+    "h4": 2.5rem,
     "h5": 2rem,
     "h6": 1.5rem,
     "p": 1rem
@@ -48,19 +45,31 @@ header {
 }
 .sidebar {
     background: lightcoral;
+    .headline {
+        font-size: font_size(h5);
+    }
+    .sub {
+        display: block;
+    }
 }
 article {
-    background-color: lightgreen;
+    .title {
+        font-size: font_size(h3);
+    }
+    .sub {
+        display: block;
+        background: lightblue;
+        font-size: font_size(h4);
+        margin: 1rem 0rem;
+
+    }
 }
+
 footer {
     background-color: lightsalmon;
     grid-column: 1/-1;
 }
 /***** Media quieres *****/
-/*
- * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
- */
-
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 290px) 

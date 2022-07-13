@@ -49,8 +49,23 @@ header p {
   background: lightcoral;
 }
 
-article {
-  background-color: lightgreen;
+.sidebar .headline {
+  font-size: 2rem;
+}
+
+.sidebar .sub {
+  display: block;
+}
+
+article .title {
+  font-size: 3rem;
+}
+
+article .sub {
+  display: block;
+  background: lightblue;
+  font-size: 2.5rem;
+  margin: 1rem 0rem;
 }
 
 footer {
@@ -59,9 +74,6 @@ footer {
 }
 
 /***** Media quieres *****/
-/*
- * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
- */
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 290px) and (max-device-width: 480px) {
   body {
