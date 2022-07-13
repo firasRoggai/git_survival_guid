@@ -31,7 +31,7 @@ body {
 
 }
 header {
-    background-image: url('./Assets/patternpad\(5\).svg');
+    background-image: url('./Assets/patternpad\(5\).svg'); // back:#5e78de , front: #5fd9f1 , black
     grid-column: 1/-1;
     display: flex;
     justify-content: center;
@@ -49,15 +49,18 @@ header {
     }
 }
 .sidebar {
-    background: lightcoral;
+    background: rgb(46, 46, 46);
     padding: 10px;
     .title {
-        font-size: font_size(h3);
+     color: white;
+     font-size: font_size(h3);
     }
     .sub {
         display: block;
         margin: 1.5rem 0;
         font-size: font_size(p);
+        color: white;
+
     }
     .sub::before {
         content: "// ";

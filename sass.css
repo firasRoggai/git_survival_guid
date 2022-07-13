@@ -50,11 +50,12 @@ header p {
 }
 
 .sidebar {
-  background: lightcoral;
+  background: #2e2e2e;
   padding: 10px;
 }
 
 .sidebar .title {
+  color: white;
   font-size: 3rem;
 }
 
@@ -62,6 +63,7 @@ header p {
   display: block;
   margin: 1.5rem 0;
   font-size: 1rem;
+  color: white;
 }
 
 .sidebar .sub::before {
