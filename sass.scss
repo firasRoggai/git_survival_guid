@@ -1,6 +1,6 @@
 /***** VARIABLES/Fonts_import *****/
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
-/***** End VARIABLES *****/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');/***** End VARIABLES *****/
 * {
     box-sizing: border-box;
     padding: 0;
@@ -22,6 +22,14 @@ $font_size_value :(
 );
 @function font_size($size){
     @return map-get($font_size_value,$size) 
+};
+$font_family_value :(
+    "header": 'Cabin',
+    "title": 'Press Start 2P',
+    // "paraghraph": ,
+);
+@function font_family($value){
+    @return map-get($font_family_value, $value);
 };
 /***** End functions *****/
 body {
@@ -46,7 +54,7 @@ header {
         height: 100%;
         position: absolute;
         background-color: rgba(66, 63, 63, 0.203);
-      }
+          }
     .content{
         z-index: 99;
     }
@@ -83,8 +91,9 @@ article {
       line-height: 2rem;
       padding: 1rem 3rem;
     .title {
-        font-size: font_size(h2);
+        font-size: font_size(h4);
         margin: 2rem 0rem;
+        font-family: font_family(title);
         text-decoration: underline;
     }
     .sub {
@@ -99,7 +108,7 @@ article {
 }
 
 footer {
-    background-color: lightsalmon;
+    background-image: url('./Assets/patternpad\(5\).svg'); // back:#5e78de , front: #5fd9f1 , black
     grid-column: 1/-1;
 }
 /***** Media quieres *****/

@@ -1,5 +1,6 @@
 /***** VARIABLES/Fonts_import *****/
 @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 /***** End VARIABLES *****/
 * {
   -webkit-box-sizing: border-box;
@@ -90,8 +91,9 @@ article {
 }
 
 article .title {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   margin: 2rem 0rem;
+  font-family: "Press Start 2P";
   text-decoration: underline;
 }
 
@@ -102,7 +104,7 @@ article .sub {
 }
 
 footer {
-  background-color: lightsalmon;
+  background-image: url("./Assets/patternpad(5).svg");
   grid-column: 1/-1;
 }
 
